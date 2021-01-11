@@ -25,7 +25,8 @@
         </form>
         <ul>
             <li v-for="(todo, i) in todos">
-                <span>{{ todo.name }}</span>
+                <span v-if="todo.priority === 'High'" class="high-priority">{{ todo.name }}</span>
+                <span v-if="todo.priority === 'Low'" class="low-priority">{{ todo.name }}</span>
                 <span>{{ todo.priority }}</span>
             </li>
         </ul>
