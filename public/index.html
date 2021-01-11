@@ -13,11 +13,20 @@
         <form v-on:submit.prevent = "addNewToDo">
             <label for="new-todo">New To Do:</label>
             <input type="text" id="new-todo" v-model="newToDo">
+
+            <div id="new-todo-radio-buttons">
+                <label for="high-priority">High</label>
+                <input type="radio" name="priority" id="high-priority" value="High" v-model="newPriority">
+                <label for="low-priority">Low</label>
+                <input type="radio" name="priority" id="low-priority" value="Low" v-model="newPriority">
+            </div>
+
             <input type="submit" value="Add To List">
         </form>
         <ul>
             <li v-for="(todo, i) in todos">
                 <span>{{ todo.name }}</span>
+                <span>{{ todo.priority }}</span>
             </li>
         </ul>
     </div>

@@ -9,12 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
           {name: "Clean bathroom", priority: "Low"},
           {name: "Car's MOT", priority: "High"}
       ],
-      newToDo: ""
+      newToDo: "",
+      newPriority: ""
     },
     methods: {
       addNewToDo: function() {
-          this.todos.push({name: this.newToDo, priority: "Low"});
+          this.todos.push({name: this.newToDo, priority: this.newPriority});
           this.newToDo = "";
+          this.newPriority = "";
       }
     }
   });
