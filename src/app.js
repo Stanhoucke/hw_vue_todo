@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
       newToDo: ""
     },
     methods: {
-      
+      addNewToDo: function() {
+          this.todos.push({name: this.newToDo, priority: "Low"});
+          this.newToDo = "";
+      }
     }
   });
 });
