@@ -9,7 +9,12 @@
 </head>
 <body>
     <div id="app">
-        Hello world!
+        <ul>
+            <li v-for="(todo, i) in todos">
+                <span>{{ todo.name }}</span>
+            </li>
+
+        </ul>
     </div>
 </body>
 </html>
