@@ -5,3 +5,8 @@
 .low-priority {
     color: green;
 }
+
+span.high-priority {
+    font-size: x-large;
+    font-weight: bold;
+}
