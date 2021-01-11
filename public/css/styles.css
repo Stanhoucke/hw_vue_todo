@@ -9,4 +9,30 @@
 span.high-priority {
     font-size: x-large;
     font-weight: bold;
+
+    border: 2px solid red;
+}
+
+span.low-priority {
+    border: 2px solid green;
+}
+
+li {
+    margin: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+span {
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin: 10px;
 }
